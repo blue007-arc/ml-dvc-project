@@ -1,0 +1,9 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - data/iris.csv
+    - train.py
+    metrics:
+    - metrics.json:
+        cache: false

@@ -1,0 +1,50 @@
+git checkout 3bd6ad3 -- params.yaml
+type params.yaml
+dvc repro
+python train.py
+dvc status
+git checkout bcd6973 -- params.yaml
+type params.yaml
+dvc repro
+dvc status
+git status
+dvc status
+cd ..
+git clone https://github.com/blue007-arc/ml-dvc-project.git ml-dvc-test
+cd ml-dvc-test
+git status
+dir
+dvc status
+dir data
+dvc pull
+dir data
+dir model.pkl
+dvc status
+python train.py
+dvc status
+dvc pull
+dir .dvc
+dir data
+git log --oneline --all
+cd C:\Users\saksh\Desktop\ml-dvc-project
+git show 0ba4d7f -- data/iris.csv.dvc
+git show e0f8e94:data/iris.csv.dvc
+git show 0ba4d7f:data/iris.csv.dvc
+vc exp show
+dvc exp show
+git log --oneline --all
+git show bcd6973 -- params.yaml
+git show 3bd6ad3 -- dvc.yaml params.yaml dvc.lock
+git checkout 3bd6ad3 -- params.yaml
+type params.yaml
+dvc repro
+python train.py
+dvc status
+dvc exp show --no-pager
+git checkout bcd6973 -- params.yaml
+type params.yaml
+dvc repro
+dvc status
+git status
+C:\Users\saksh\Desktop\dvc-remote
+doskey /history > terminal_history.txt

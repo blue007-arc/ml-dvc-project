@@ -7,3 +7,7 @@ stages:
     metrics:
     - metrics.json:
         cache: false
+    params:
+    - train.n_estimators
+    - train.random_state
+    - train.test_size

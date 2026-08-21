@@ -5,12 +5,17 @@ stages:
     deps:
     - path: data/iris.csv
       hash: md5
-      md5: 5800fdd9aef31a98bc4ff239783be831
-      size: 4029
+      md5: 4a469644a09079556b73cbc46cb093c3
+      size: 4495
     - path: train.py
       hash: md5
-      md5: ecf4765e12d25087c7797d3308d4cbfc
-      size: 864
+      md5: 5cec73577a01e4ab59ebb1210a2bee42
+      size: 1087
+    params:
+      params.yaml:
+        train.n_estimators: 50
+        train.random_state: 42
+        train.test_size: 0.2
     outs:
     - path: metrics.json
       hash: md5

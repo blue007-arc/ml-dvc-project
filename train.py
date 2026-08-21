@@ -32,6 +32,10 @@ model = RandomForestClassifier(
 
 model.fit(X_train, y_train)
 
+import joblib
+joblib.dump(model, "model.pkl")
+print("Model saved as model.pkl")
+
 # Make predictions
 predictions = model.predict(X_test)
 
